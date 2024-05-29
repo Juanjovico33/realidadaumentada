@@ -3,54 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realidad Aumentada con Logos en Movimiento y Enlaces</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+   
 </head>
-<body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs>
-        <!-- Definición del marcador -->
-        <a-marker preset="hiro">
-            <!-- Logo de Facebook -->
-            <a-image src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                     position="-0.5 0.5 0"
-                     scale="0.5 0.5 0.5"
-                     href="https://www.facebook.com">
-                <!-- Animación de rotación -->
-                <a-animation attribute="rotation"
-                             dur="5000"
-                             fill="forwards"
-                             to="0 360 0"
-                             repeat="indefinite"></a-animation>
-            </a-image>
-            <!-- Logo de YouTube -->
-            <a-image src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
-                     position="0.5 0.5 0"
-                     scale="0.5 0.5 0.5"
-                     href="https://www.youtube.com">
-                <!-- Animación de rotación -->
-                <a-animation attribute="rotation"
-                             dur="5000"
-                             fill="forwards"
-                             to="0 360 0"
-                             repeat="indefinite"></a-animation>
-            </a-image>
-        </a-marker>
-        <!-- Cámara para ver la escena -->
-        <a-entity camera></a-entity>
-    </a-scene>
-
-    <script>
-        AFRAME.registerComponent('href', {
-            schema: {type: 'string'},
-            init: function () {
-                var url = this.data;
-                this.el.addEventListener('click', function () {
-                    window.open(url, '_blank');
-                });
-            }
-        });
-    </script>
+<body>
+   <h1>hola mundo</h1>
 </body>
 </html>
 
